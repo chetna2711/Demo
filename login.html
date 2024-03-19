@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">AKM Infotech</div>
+        <ul>
+          <li><a href="#"  onclick="redirectPage('home.html')" id="homelink">Home</a></li>
+          <li><a href="#"  onclick="redirectPage('login.html')" id="loginlink">Login</a></li>
+        <li>  <a href="#" onclick="redirectPage('signup.html')" id="signuplink">Signup</a></li>
+      </ul>
+    </nav>
+</header>
+  <div class="container">
+    <div class="form-container" id="loginform">
+     <form>
+       <h2 class="heading">Login</h2>
+        <input type="email" class="form-control" id="email" name='email' placeholder="Email">
+        <input type="password" class="form-control" id="password" name='password' placeholder="Password">
+        <button  type="button" onclick="loginData()">Submit</button>
+        <p >Don't have an account ? <a href="#" class="link" onclick="redirectPage('signup.html')" id="signuplink">Signup</a></p>
+     </form>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 All Rights reserved by AKM Infotech</p>
+</footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
